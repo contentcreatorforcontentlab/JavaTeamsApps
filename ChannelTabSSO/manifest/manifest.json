@@ -1,0 +1,49 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "a2f5e45f-c3a7-4ba6-8e14-543e45e1be95",
+    "packageName": "com.contentlab.teams.java.channeltabsso",
+    "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+    },
+    "name": {
+        "short": "Java Group Tab Teams Auth SSO",
+        "full": "Java Group Tab Teams Auth SSO"
+    },
+    "description": {
+        "short": "Java Group Tab Teams Auth SSO",
+        "full": "Java Group Tab Teams Auth SSO"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "accentColor": "#0000EE",
+    "configurableTabs": [
+      {
+        "configurationUrl": "https://channeltabsso-1634231313958.azurewebsites.net/Configure",
+        "canUpdateConfiguration": true,
+        "scopes": [
+          "team",
+          "groupchat"
+        ]
+      }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "channeltabsso-1634231313958.azurewebsites.net",
+        "*.onmicrosoft.com",
+        "*.azurewebsites.net"
+    ],
+	"webApplicationInfo": {
+      "id": "a2f5e45f-c3a7-4ba6-8e14-543e45e1be95",
+      "resource": "api://channeltabsso-1634231313958.azurewebsites.net/a2f5e45f-c3a7-4ba6-8e14-543e45e1be95"
+  }
+}
