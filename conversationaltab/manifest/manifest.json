@@ -1,0 +1,42 @@
+﻿{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "version": "1.0.0",
+  "id": "59df39a6-33f2-463d-8b70-f32919963ce9",
+  "packageName": "com.contentlab.teams.java.conversationaltab",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+  },
+  "name": {
+    "short": "Java Conversational Tab",
+    "full": "Java Conversational Tab"
+  },
+  "description": {
+    "short": "Java - View Tab With Conversations",
+    "full": "Java - This sample demos conversational tabs"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#60A18E",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://conversationaltab-1634904929775.azurewebsites.net/configure",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ],
+      "context": [
+        "channelTab"
+      ]
+    }
+  ],
+  "permissions": [ "identity", "messageTeamMembers" ],
+  "validDomains": [
+        "*.azurewebsites.net"
+    ]
+}
