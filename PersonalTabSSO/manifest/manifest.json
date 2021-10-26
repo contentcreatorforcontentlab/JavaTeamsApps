@@ -1,0 +1,48 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "5e443522-1974-404b-a67b-3cc939681be1",
+    "packageName": "com.contentlab.teams.java.personaltabsso",
+    "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+    },
+    "name": {
+        "short": "Java Personal Tab SSO",
+        "full": "Java Personal Tab SSO"
+    },
+    "description": {
+        "short": "Java Personal Tab SSO",
+        "full": "Java Personal Tab SSO"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "Java Personal Tab SSO",
+            "name": "Java Personal Tab SSO",
+            "contentUrl": "https://personaltabsso-1635023142497.azurewebsites.net",
+            "scopes": [ "personal" ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [ "personal" ]
+        }
+    ],
+    "permissions": [ "identity", "messageTeamMembers" ],
+    "validDomains": [
+        "personaltabsso-1635023142497.azurewebsites.net",
+        "*.onmicrosoft.com",
+        "*.azurewebsites.net"
+    ],
+	"webApplicationInfo": {
+        "id": "2ffed052-5f43-42dd-988c-0072b07b6da9",
+        "resource": "api://personaltabsso-1635023142497.azurewebsites.net/2ffed052-5f43-42dd-988c-0072b07b6da9"
+  }
+}
